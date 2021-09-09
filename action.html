@@ -287,7 +287,21 @@
           </div>
         </div>
       </div>
-      <!-- Place for ads -->
+      <!-- Place for Conversion -->
+      <script id="ADF712">
+        (function (uniqueid, element, document, jslink, campaignId, adgroupId) {
+          var l = document.createElement(element);
+          l.setAttribute("src", jslink);
+          l.setAttribute("async", 'true')
+          l.setAttribute("type", "text/javascript");
+          var x = document.getElementById(uniqueid);
+          x.id = Math.random().toString(36).substr(2, 9)
+          x.appendChild(l, x);
+          l.onload = function () {
+            Conversion(campaignId, adgroupId)
+          }
+        })("ADF712", "script", document, "https://content-adfinix.sgp1.digitaloceanspaces.com/conversion-staging.js", 7, 12)
+      </script>
 
     </div>
   </section>
