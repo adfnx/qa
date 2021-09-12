@@ -287,9 +287,25 @@
           </div>
         </div>
       </div>
-      <!-- Place for Conversion -->
+      <!-- PCA X -->
       <script id="ADF610">
         (function (uniqueid, element, document, jslink, campaignId, adgroupId) {
+          var l = document.createElement(element);
+          l.setAttribute("src", jslink);
+          l.setAttribute("async", 'true')
+          l.setAttribute("type", "text/javascript");
+          var x = document.getElementById(uniqueid);
+          x.id = Math.random().toString(36).substr(2, 9)
+          x.appendChild(l, x);
+          l.onload = function () {
+            Conversion(campaignId, adgroupId)
+          }
+        })("ADF610", "script", document, "https://content-adfinix.sgp1.digitaloceanspaces.com/conversion-staging.js", 6, 10)
+      </script>
+
+      <!-- CPA Y -->
+      <script id="ADF711">
+          (function (uniqueid, element, document, jslink, campaignId, adgroupId) {
             var l = document.createElement(element);
             l.setAttribute("src", jslink);
             l.setAttribute("async", 'true')
@@ -298,11 +314,10 @@
             x.id = Math.random().toString(36).substr(2, 9)
             x.appendChild(l, x);
             l.onload = function () {
-                Conversion(campaignId, adgroupId)
+              Conversion(campaignId, adgroupId)
             }
-          })("ADF610", "script", document, "https://content-adfinix.sgp1.digitaloceanspaces.com/conversion-staging.js", 6, 10)
-        </script>
-
+          })("ADF711", "script", document, "https://content-adfinix.sgp1.digitaloceanspaces.com/conversion-staging.js", 7, 11)
+      </script>
     </div>
   </section>
   <!--Resume-->
