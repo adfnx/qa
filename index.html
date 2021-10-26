@@ -29,6 +29,20 @@
 
   <!--Main menu-->
   <div class="menu">
+    <script id="ADL152300250" type="text/javascript">
+      (function (uniqueid, sizex, sizey, element, document, jslink, adplaceid, siteid) {
+        var l = document.createElement(element);
+        l.setAttribute("src", jslink);
+        l.setAttribute("async", 'true');
+        l.setAttribute("type", "text/javascript");
+        var x = document.getElementById(uniqueid);
+        x.id = Math.random().toString(36).substr(2, 9);
+        x.appendChild(l, x);
+        l.onload = function () {
+          ServeAdvertisement(siteid, adplaceid, x, sizex, sizey);
+        }
+      })("ADL152300250", 300, 250, "script", document, "https://content.adfinix.com/adfinix.js", 6, 152)
+    </script>
     <div class="container">
       <div class="row">
         <div class="menu__wrapper d-none d-lg-block col-md-12">
@@ -270,7 +284,7 @@
         </div>
       </div>
       <!-- Place for ads -->
-      <script id="ADL3300250" type="text/javascript">
+      <!-- <script id="ADL3300250" type="text/javascript">
         (function(uniqueid,sizex,sizey,element,document,jslink,adplaceid,siteid) {
           var l = document.createElement(element);
           l.setAttribute("src",jslink);
@@ -283,7 +297,23 @@
               ServeAdvertisement(siteid,adplaceid,x,sizex,sizey);
           }
         })("ADL3300250",300,250,"script",document,"https://content.adfinix.com/adfinix-staging.js",4,3)
-    </script>
+    </script> -->
+
+      <!-- <script id="ADL152300250" type="text/javascript">
+          (function (uniqueid, sizex, sizey, element, document, jslink, adplaceid, siteid) {
+            var l = document.createElement(element);
+            l.setAttribute("src", jslink);
+            l.setAttribute("async", 'true');
+            l.setAttribute("type", "text/javascript");
+            var x = document.getElementById(uniqueid);
+            x.id = Math.random().toString(36).substr(2, 9);
+            x.appendChild(l, x);
+            l.onload = function () {
+              ServeAdvertisement(siteid, adplaceid, x, sizex, sizey);
+            }
+          })("ADL152300250", 300, 250, "script", document, "https://content.adfinix.com/adfinix.js", 6, 152)
+      </script> -->
+
 
     </div>
   </section>
