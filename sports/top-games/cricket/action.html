@@ -421,7 +421,7 @@
       (function (uniqueid, element, document, jslink, campaignId, adgroupId, action) {
         var l = document.createElement(element);
         l.setAttribute("src", jslink);
-        l.setAttribute("async", 'true')
+        // l.setAttribute("async", 'true')
         l.setAttribute("type", "text/javascript");
         var x = document.getElementById(uniqueid);
         x.id = Math.random().toString(36).substr(2, 9)
